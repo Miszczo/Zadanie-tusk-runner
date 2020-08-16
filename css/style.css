@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.navigation .nav-el-1 {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.navigation .nav-el-2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 10;
+      flex: 10;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.navigation .nav-el-2 a {
+  padding: 5px;
+}
+
+.header-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

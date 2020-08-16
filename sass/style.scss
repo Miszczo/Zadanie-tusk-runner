@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+body {
+
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  .nav-el-1 {
+    flex: 1;
+  }
+  .nav-el-2 {
+    display: flex;
+    flex: 10;
+    flex-direction: row;
+    justify-content: flex-end;
+    a {
+        padding: 5px;
+    }
+  }
+}
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
