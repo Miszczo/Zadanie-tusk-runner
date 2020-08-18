@@ -112,7 +112,8 @@ body h1, body h2, body h3, body h4, body h5 {
   -ms-flex-pack: center;
       justify-content: center;
   background-color: #FEFEF7;
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 150px;
 }
 
 .services .services-header {
@@ -172,6 +173,8 @@ body h1, body h2, body h3, body h4, body h5 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0 150px;
 }
 
 .goods .goods-header {
@@ -224,5 +227,37 @@ body h1, body h2, body h3, body h4, body h5 {
   font-size: 20px;
   font-style: italic;
   color: grey;
+}
+
+/* footer */
+.footer {
+  height: 100px;
+}
+
+.footer .social-media {
+  height: 100%;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.footer .social-media b {
+  padding: 0 100px;
+}
+
+.footer .social-media i {
+  height: 60px;
+  width: 60px;
+  font-size: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  cursor: pointer;
+  background: #ccc;
+  line-height: 60px;
+  text-align: center;
+  margin-left: 25px;
 }
 /*# sourceMappingURL=style.css.map */
