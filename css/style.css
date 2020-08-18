@@ -4,6 +4,18 @@
 
 body {
   color: black;
+  font-family: "Roboto", sans-serif;
+  background-color: #EEEEEE;
+}
+
+body h1, body h2, body h3, body h4, body h5 {
+  font-family: "Domine", serif;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20;
+  margin: 0 auto;
 }
 
 /* header */
@@ -31,8 +43,10 @@ body {
 .hero-image .hero-title p {
   margin: 0;
   text-align: center;
-  font-size: 36px;
+  font-size: 60px;
   font-weight: bold;
+  font-family: "Domine", serif;
+  text-decoration: underline;
 }
 
 .hero-image .hero-nav {
@@ -50,7 +64,7 @@ body {
   padding-left: 30px;
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .hero-image .hero-nav a:visited {
@@ -98,6 +112,7 @@ body {
   -ms-flex-pack: center;
       justify-content: center;
   background-color: #FEFEF7;
+  margin-top: 60px;
 }
 
 .services .services-header {
@@ -147,9 +162,67 @@ body {
 }
 
 .services .services-content .coockies p, .services .services-content .breads p, .services .services-content .cakes p {
-  margin: 10px;
+  margin: 20px;
   font-size: 20px;
 }
 
 /* our baked goods */
+.goods {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.goods .goods-header {
+  -ms-flex: 100%;
+      flex: 100%;
+  margin: 100px;
+}
+
+.goods .goods-header h1, .goods .goods-header p {
+  text-align: center;
+}
+
+.goods .goods-header h1 {
+  font-size: 54px;
+  margin-top: 100px;
+}
+
+.goods .goods-header p {
+  font-size: 20px;
+}
+
+.goods .goods-content-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.goods .goods-content-container .goods-content {
+  -ms-flex: 33.3333%;
+      flex: 33.3333%;
+  text-align: center;
+  margin: 40px 0px;
+  background-color: #FEFEF7;
+  border: 20px solid #EEEEEE;
+}
+
+.goods .goods-content-container .goods-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.goods .goods-content-container .goods-content p {
+  font-size: 20px;
+  font-style: italic;
+  color: grey;
+}
 /*# sourceMappingURL=style.css.map */
