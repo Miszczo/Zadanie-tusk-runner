@@ -41,7 +41,7 @@ body {
     }
   }
   .hero-nav{
-    display:flex;
+    display: flex;
     flex: 4;
     justify-content: center;
     margin-left: 40px;
@@ -133,7 +133,7 @@ body {
   }
 }
 
-/* our baked goods */
+/* our goods */
 
 .goods {
   display: flex;
@@ -159,7 +159,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
-    align-content: flex-end;
     .goods-content {
       flex: 33.3333%;
       text-align: center;
@@ -167,7 +166,7 @@ body {
       background-color: #FEFEF7;
       border: 20px solid #EEEEEE;
       img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
       }
       h1 {
@@ -208,4 +207,52 @@ body {
 
     }
   }
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.hero-nav {
+		a {
+			padding: 5px;
+		}
+	}
+	.hero-text {
+		text-align: center;
+	}
+	.goods {
+		margin: auto;
+		.goods-header {
+			margin: auto;
+		}
+		.goods-content-container {
+			.goods-content {
+				h1 {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.footer {
+		width: auto;
+		.social-media {
+			display:flex;
+			font-size: 15px;
+			justify-content: flex-start;
+			b {
+				padding: 20px;
+			}
+			i {
+				height: 40px;
+    		width: 40px;
+    		font-size: 20px;
+				line-height: 40px;
+				margin-left: 10px;
+			}
+		}
+	}
 }
